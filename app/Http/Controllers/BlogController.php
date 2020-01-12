@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -14,8 +13,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::orderBy('id')->get();  
-        return view('Dashboard.blog' ,compact('blogs'));
+        return view('Dashboard.blog');
     }
 
     /**
