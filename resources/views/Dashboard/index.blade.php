@@ -1,27 +1,39 @@
 @extends('Layout.app')
 @section('content')
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(public/images/bg_1.jpg);">
+      <div class="slider-item" style="background-image:url(public/images/studybaba.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate">
-          	<span class="subheading">Welcome to Consolve</span>
-            <h1 class="mb-4">We Are The Best Consulting Agency</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Our Services</a></p>
+          	<span class="subheading">Welcome to StudyBABA</span>
+            <h1 class="mb-4">We Are Ready to Grow Your Business</h1>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Call Us Now!!</a></p>
           </div>
         </div>
         </div>
       </div>
 
-      <div class="slider-item" style="background-image:url(public/images/bg_2.jpg);">
+      <div class="slider-item" style="background-image:url(public/images/studybaba2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate">
-          	<span class="subheading">Todays Talent, Tommorow Success</span>
-            <h1 class="mb-4">We Help to Grow Your Business</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Our Services</a></p>
+          	<span class="subheading">Think Now, Get Success</span>
+            <h1 class="mb-4">We are For You to Made Your Profite</h1>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Let's Connect</a></p>
+          </div>
+        </div>
+        </div>
+	  </div>
+	  <div class="slider-item" style="background-image:url(public/images/studybaba3.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate">
+          	<span class="subheading">Let's Work Together</span>
+            <h1 class="mb-4">We Think We Can Do It For You</h1>
+            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Let's Chat</a></p>
           </div>
         </div>
         </div>
