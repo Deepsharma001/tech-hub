@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 use App\Blog;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class Blog_SingleController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $blogs = Blog::orderBy('id')->get();  
-        return view('Dashboard.blog' ,compact('blogs'));
+        $blogs = Blog::where('id','=',$request ->id)->first();  
+        return view('Dashboard.blog-single',compact('blogs'));
+        
     }
 
     /**

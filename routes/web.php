@@ -20,5 +20,5 @@ Route::get('/contact','ContactController@index');
 Route::get('/project','ProjectController@index');
 Route::get('contect/create','ContactController@save');
 Route::post('contact/create','ContactController@create');
-
+Route::get('blog-single/{id}', 'Blog_SingleController@index')->name('blog-single');
 
