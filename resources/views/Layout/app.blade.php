@@ -71,7 +71,7 @@
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="index.php" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item active"><a href="{{'/'}}" class="nav-link pl-0">Home</a></li>
 	        	<li class="nav-item"><a href="{{'/about'}}" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="{{'/project'}}" class="nav-link">Projects</a></li>
 	        	<li class="nav-item"><a href="{{'/service'}}" class="nav-link">Services</a></li>
