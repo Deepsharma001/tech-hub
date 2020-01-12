@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Dashboard.index');
-});
 
+Route::get('/','HomeController@index');
 Route::get('/blog','BlogController@index');
 Route::get('/about','AboutController@index');
 Route::get('/service','ServiceController@index');
