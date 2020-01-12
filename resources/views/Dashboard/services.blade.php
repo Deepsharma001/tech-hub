@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -17,7 +17,7 @@
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
-							<div class="img" style="background-image: url(images/about.jpg); border"></div>
+							<div class="img" style="background-image: url(public/images/about.jpg); border"></div>
 							<div class="text">
 								<h3>Read Our Success Story for Inspiration</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>

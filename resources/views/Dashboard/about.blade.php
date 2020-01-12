@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('public/public/images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -17,7 +17,7 @@
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border">
-							<div class="img" style="background-image: url(images/about.jpg); border"></div>
+							<div class="img" style="background-image: url(public/public/images/about.jpg); border"></div>
 							<div class="text">
 								<h3>Read Our Success Story for Inspiration</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -39,7 +39,7 @@
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-2 d-flex">
     			<div class="col-md-6 align-items-stretch d-flex">
-    				<div class="img img-video d-flex align-items-center" style="background-image: url(images/about.jpg);">
+    				<div class="img img-video d-flex align-items-center" style="background-image: url(public/public/images/about.jpg);">
     					<div class="video justify-content-center">
 								<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
 									<span class="ion-ios-play"></span>
@@ -56,7 +56,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_3.jpg);">
+		<section class="ftco-intro ftco-no-pb img" style="background-image: url(public/public/images/bg_3.jpg);">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
@@ -126,7 +126,7 @@
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(public/public/images/person_1.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -140,7 +140,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img" style="background-image: url(public/public/images/person_2.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -154,7 +154,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img" style="background-image: url(public/public/images/person_3.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -168,7 +168,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_4.jpg)">
+                  <div class="user-img" style="background-image: url(public/public/images/person_4.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -182,7 +182,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(public/public/images/person_1.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">

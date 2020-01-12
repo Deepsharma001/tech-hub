@@ -1,7 +1,7 @@
 @extends('Layout.app')
 @section('content')
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(images/bg_1.jpg);">
+      <div class="slider-item" style="background-image:url(public/images/bg_1.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+      <div class="slider-item" style="background-image:url(public/images/bg_2.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -33,7 +33,7 @@
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
-							<div class="img" style="background-image: url(images/about.jpg); border"></div>
+							<div class="img" style="background-image: url(public/images/about.jpg); border"></div>
 							<div class="text">
 								<h3>Read Our Success Story for Inspiration</h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
@@ -84,7 +84,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_3.jpg);">
+		<section class="ftco-intro ftco-no-pb img" style="background-image: url(public/images/bg_3.jpg);">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
           <div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
@@ -208,7 +208,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_1.jpg);">
+		<section class="ftco-intro ftco-no-pb img" style="background-image: url(public/images/bg_1.jpg);">
     	<div class="container">
     		<div class="row justify-content-center">
           <div class="col-lg-9 col-md-8 d-flex align-items-center heading-section heading-section-white ftco-animate">
@@ -232,7 +232,7 @@
         </div>
 				<div class="row no-gutters">
     			<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-2.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -242,7 +242,7 @@
     				</div>
   				</div>
   				<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-1.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -253,7 +253,7 @@
   				</div>
 
     			<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-3.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -263,7 +263,7 @@
     				</div>
     			</div>
 					<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-4.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -273,7 +273,7 @@
     				</div>
   				</div>
   				<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-5.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -283,7 +283,7 @@
     				</div>
   				</div>
   				<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-6.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -293,7 +293,7 @@
     				</div>
   				</div>
   				<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-7.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-7.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -303,7 +303,7 @@
     				</div>
   				</div>
   				<div class="col-md-3">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-8.jpg);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-8.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -317,7 +317,7 @@
 		</section>
 
 
-    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_5.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(public/images/bg_5.jpg);" data-stellar-background-ratio="0.5">
     	<div class="overlay"></div>
     	<div class="container">
     		<div class="row justify-content-end">
@@ -382,7 +382,7 @@
 				<div class="row">
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_1.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -404,7 +404,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_2.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -426,7 +426,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_3.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -463,7 +463,7 @@
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(public/images/person_1.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -477,7 +477,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img" style="background-image: url(public/images/person_2.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -491,7 +491,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img" style="background-image: url(public/images/person_3.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -505,7 +505,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_4.jpg)">
+                  <div class="user-img" style="background-image: url(public/images/person_4.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -519,7 +519,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img" style="background-image: url(public/images/person_1.jpg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">

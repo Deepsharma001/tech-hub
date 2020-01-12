@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -17,7 +17,7 @@
 				<div class="row">
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_1.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -39,7 +39,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_2.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -61,7 +61,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_3.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -84,7 +84,7 @@
 
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_4.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_4.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -106,7 +106,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_5.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_5.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>
@@ -128,7 +128,7 @@
           </div>
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_6.jpg');">
+              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('public/images/image_6.jpg');">
 								<div class="meta-date text-center p-2">
                   <span class="day">26</span>
                   <span class="mos">June</span>

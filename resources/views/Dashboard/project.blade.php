@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content') 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -16,7 +16,7 @@
 			<div class="container">
 				<div class="row">
     			<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-2.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -26,7 +26,7 @@
     				</div>
   				</div>
   				<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-1.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -37,7 +37,7 @@
   				</div>
 
     			<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-3.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -47,7 +47,7 @@
     				</div>
     			</div>
 					<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-4.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -57,7 +57,7 @@
     				</div>
   				</div>
   				<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-5.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -67,7 +67,7 @@
     				</div>
   				</div>
   				<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-6.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -77,7 +77,7 @@
     				</div>
   				</div>
   				<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-7.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-7.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -87,7 +87,7 @@
     				</div>
   				</div>
   				<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-8.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-8.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
@@ -97,7 +97,7 @@
     				</div>
   				</div>
 					<div class="col-md-4">
-    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-9.jpg);">
+    				<div class="project mb-4 img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(public/images/project-9.jpg);">
     					<div class="overlay"></div>
     					<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
 	    				<div class="text text-center p-4">
