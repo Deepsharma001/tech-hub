@@ -7,20 +7,20 @@
     
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/open-iconic-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/animate.css') }}">
     
-    <link rel="stylesheet" href="public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="public/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/magnific-popup.css') }}">
 
-    <link rel="stylesheet" href="public/css/aos.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/aos.css') }}">
 
-    <link rel="stylesheet" href="public/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/ionicons.min.css') }}">
     
-    <link rel="stylesheet" href="public/css/flaticon.css">
-    <link rel="stylesheet" href="public/css/icomoon.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
     @stack('css')
   </head>
   <body>
@@ -171,22 +171,22 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="public/js/jquery.min.js"></script>
+  <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
   <script src="https://use.fontawesome.com/a36d61e50a.js"></script>
-  <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="public/js/popper.min.js"></script>
-  <script src="public/js/bootstrap.min.js"></script>
-  <script src="public/js/jquery.easing.1.3.js"></script>
-  <script src="public/js/jquery.waypoints.min.js"></script>
-  <script src="public/js/jquery.stellar.min.js"></script>
-  <script src="public/js/owl.carousel.min.js"></script>
-  <script src="public/js/jquery.magnific-popup.min.js"></script>
-  <script src="public/js/aos.js"></script>
-  <script src="public/js/jquery.animateNumber.min.js"></script>
-  <script src="public/js/scrollax.min.js"></script>
+  <script src="{{ URL::asset('js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ URL::asset('js/popper.min.js') }}"></script>
+  <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.waypoints.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ URL::asset('js/aos.js') }}"></script>
+  <script src="{{ URL::asset('js/jquery.animateNumber.min.js') }}"></script>
+  <script src="{{ URL::asset('js/scrollax.min.js') }}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="public/js/google-map.js"></script>
-  <script src="public/js/main.js"></script>
+  <script src="{{ URL::asset('js/google-map.js') }}"></script>
+  <script src="{{ URL::asset('js/main.js') }}"></script>
   @stack('js')
   </body>
   </html>
