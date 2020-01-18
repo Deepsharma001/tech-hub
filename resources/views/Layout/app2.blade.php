@@ -9,9 +9,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="{{ URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ URL::asset('assets/css/font-awesome.min.css') }}"rel="stylesheet" type="text/css" >
+    <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
     @stack('css')
     <!--[if lt IE 9]>
 		<script src="assets/js/html5shiv.min.js"></script>
@@ -306,13 +306,13 @@
         </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.slimscroll.js"></script>
-    <script src="assets/js/Chart.bundle.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="{{ URL::asset('assets/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/jquery.slimscroll.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/Chart.bundle.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/chart.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/app.js') }}"></script>
     <script>
             $(function () {
                 $('#datetimepicker3').datetimepicker({
