@@ -12,7 +12,11 @@
 */
 
 
-Route::get('/','HomeController@index');
+
+
+Route::get('/admin','HomeController@index');
+Route::get('/','IndexController@index');
+
 Route::get('/blog','BlogController@index');
 Route::get('/about','AboutController@index');
 Route::get('/service','ServiceController@index');
@@ -21,4 +25,9 @@ Route::get('/project','ProjectController@index');
 Route::get('contect/create','ContactController@save');
 Route::post('contact/create','ContactController@create');
 
+Route::get('/blog_single/{id}','Blog_singleController@index');
+Route::get('/blog_single/{id}/create','CommentController@create');
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

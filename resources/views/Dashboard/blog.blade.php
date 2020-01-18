@@ -1,6 +1,6 @@
 @extends('Layout.app')
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -18,7 +18,7 @@
         @foreach($blogs as $blog)
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('{{ URL::asset($blog->image) }}');">
+              <a href="/blog_single/{{"$blog->id"}}" class="block-20 d-flex align-items-end" style="background-image: url('{{ URL::asset($blog->image) }}');">
 								<div class="meta-date text-center p-2">
                   <span class="day">{{$blog->created_at->format('d')}}</span>
                   <span class="mos">{{$blog->created_at->format('M')}}</span>

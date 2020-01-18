@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
-/resources/views/Layout/aap.blade.php
+.env
 .env.backupsubYear(1)
 .phpunit.result.cache
 Homestead.json

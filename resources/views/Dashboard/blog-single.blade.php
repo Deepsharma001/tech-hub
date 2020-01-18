@@ -1,12 +1,12 @@
 @extends('Layout.app')
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ URL::asset($blog->image) }}');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-2 bread">Blog Single</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="index.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>{{$blog->title}} <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
             <h2 class="mb-3">#2. Creative WordPress Themes</h2>
             <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
             <p>
-              <img src="public/images/image_2.jpg" alt="" class="img-fluid">
+              <img src="{{ URL::asset($blog->image) }}" alt="" class="img-fluid">
             </p>
             <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
             <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
@@ -36,7 +36,7 @@
             
             <div class="about-author d-flex p-4 bg-light">
               <div class="bio mr-5">
-                <img src="public/images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+                <img src="{{ URL::asset($blog->image) }}" alt="Image placeholder" class="img-fluid mb-4">
               </div>
               <div class="desc">
                 <h3>George Washington</h3>
@@ -50,7 +50,7 @@
               <ul class="comment-list">
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="public/images/person_1.jpg" alt="Image placeholder">
+                    <img src="{{ URL::asset($blog->image) }}" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>John Doe</h3>
@@ -62,7 +62,7 @@
 
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="public/images/person_1.jpg" alt="Image placeholder">
+                    <img src="{{ URL::asset($blog->image) }}" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>John Doe</h3>
@@ -74,7 +74,7 @@
                   <ul class="children">
                     <li class="comment">
                       <div class="vcard bio">
-                        <img src="public/images/person_1.jpg" alt="Image placeholder">
+                        <img src="{{ URL::asset($blog->image) }}" alt="Image placeholder">
                       </div>
                       <div class="comment-body">
                         <h3>John Doe</h3>
@@ -131,26 +131,26 @@
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5 h4 font-weight-bold">Leave a comment</h3>
-                <form action="#" class="p-5 bg-light">
+                <form action="#" class="p-5 bg-light" method="post">
                   <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" class="form-control" id="name">
+                    <label for="name" >Name *</label>
+                    <input type="text" name="name" class="form-control" id="name">
                   </div>
                   <div class="form-group">
                     <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" name="email" class="form-control" id="email">
                   </div>
                   <div class="form-group">
-                    <label for="website">Website</label>
-                    <input type="url" class="form-control" id="website">
+                    <label for="website">Regards</label>
+                    <input type="url" name="regards" class="form-control" id="website">
                   </div>
 
                   <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    <label for="message" >Message</label>
+                    <textarea name="textarea" id="message" cols="30" rows="10" class="form-control"></textarea>
                   </div>
                   <div class="form-group">
-                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                    <input type="submit" name="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
                   </div>
 
                 </form>
@@ -168,51 +168,30 @@
               </form>
             </div>
             <div class="sidebar-box ftco-animate">
-            	<h3>Category</h3>
+              <h3>Category</h3>
+              @foreach($blogcat as $cat)
               <ul class="categories">
-                <li><a href="#">Business <span>(6)</span></a></li>
-                <li><a href="#">Finance <span>(8)</span></a></li>
-                <li><a href="#">Auto loan <span>(2)</span></a></li>
-                <li><a href="#">Real Estate <span>(2)</span></a></li>
-                <li><a href="#">Businessman <span>(2)</span></a></li>
+                <li><a href="#">{{$cat->category_name}} <span>(6)</span></a></li>
+                
               </ul>
+             @endforeach 
             </div>
 
             <div class="sidebar-box ftco-animate">
               <h3>Popular Articles</h3>
+              @foreach($popularblog as $popular)
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(public/images/image_1.jpg);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <h3 class="heading"><a href="#">{{$popular->title}}</a></h3>
                   <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                    <div><a href="#"><span class="icon-calendar"></span> {{$popular->created_at->format('M , d ,Y')}}</a></div>
                     <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
                     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
                   </div>
                 </div>
               </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(public/images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(public/images/image_3.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Dave Lewis</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
+             @endforeach
             </div>
 
             <div class="sidebar-box ftco-animate">
