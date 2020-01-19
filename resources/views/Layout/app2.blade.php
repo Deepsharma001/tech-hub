@@ -24,7 +24,7 @@
         <div class="header">
             <div class="header-left">
                 <a href="index-2.html" class="logo">
-                    <img src="public/admin_assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+                    <img src="{{asset('public/admin_assets/img/logo.png') }}" width="35" height="35" alt=""> <span>Preclinic</span>
                 </a>
             </div>
             <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -65,7 +65,7 @@
                 <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                         <span class="user-img">
-							<img class="rounded-circle" src="public/admin_assets/img/user.jpg" width="24" alt="Admin">
+							<img class="rounded-circle" src="{{asset('public/admin_assets/img/user.jpg') }}" width="24" alt="Admin">
 							<span class="status online"></span>
                         </span>
                         <span>Admin</span>
