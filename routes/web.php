@@ -12,11 +12,23 @@
 */
 
 
-
+Auth::routes();
 
 Route::get('/admin','HomeController@index');
-Route::get('/','IndexController@index');
 
+Route::get('/blog_view','Add_blogController@index');
+Route::get('/blog_show/{id}','Add_blogController@show');
+Route::get('/blog_add','Add_blogController@create');
+Route::post('/blog_add','Add_blogController@store');
+Route::get('/blog_edit/{id}','Add_blogController@edit');
+Route::post('/blog_edit/{id}','Add_blogController@update');
+Route::get('/all_blog','Add_blogController@all');
+
+
+
+
+
+Route::get('/','IndexController@index');
 Route::get('/blog','BlogController@index');
 Route::get('/about','AboutController@index');
 Route::get('/service','ServiceController@index');
@@ -28,6 +40,6 @@ Route::post('contact/create','ContactController@create');
 Route::get('/blog_single/{id}','Blog_singleController@index');
 Route::get('/blog_single/{id}/create','CommentController@create');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+

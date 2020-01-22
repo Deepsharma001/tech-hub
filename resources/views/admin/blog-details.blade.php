@@ -1,4 +1,5 @@
-
+@extends('Layout.app2')
+@section('content')
             <div class="content">
                 <div class="row">
                     <div class="col-sm-12">
@@ -7,9 +8,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8">
+                        
                         <div class="blog-view">
                             <article class="blog blog-single-post">
-                                <h3 class="blog-title">Do you know the ABCs of Health Care?</h3>
+                                <h3 class="blog-title">{{$blog->title}}</h3>
                                 <div class="blog-info clearfix">
                                     <div class="post-left">
                                         <ul>
@@ -20,7 +22,7 @@
                                     <div class="post-right"><a href="#."><i class="fa fa-comment-o"></i>1 Comment</a></div>
                                 </div>
                                 <div class="blog-image">
-                                    <a href="#."><img alt="" src="assets/img/blog/blog-01.jpg" class="img-fluid"></a>
+                                    <a href="#."><img alt="" src="admin_assets/img/blog/blog-01.jpg" class="img-fluid"></a>
                                 </div>
                                 <div class="blog-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -46,7 +48,7 @@
                                 <div class="about-author">
                                     <div class="about-author-img">
                                         <div class="author-img-wrap">
-                                            <img class="img-fluid rounded-circle" alt="" src="assets/img/user.jpg">
+                                            <img class="img-fluid rounded-circle" alt="" src="admin_assets/img/user.jpg">
                                         </div>
                                     </div>
                                     <div class="author-details">
@@ -61,7 +63,7 @@
                                     <li>
                                         <div class="comment">
                                             <div class="comment-author">
-                                                <img class="avatar" alt="" src="assets/img/user.jpg">
+                                                <img class="avatar" alt="" src="admin_assets/img/user.jpg">
                                             </div>
                                             <div class="comment-block">
                                                 <span class="comment-by">
@@ -78,7 +80,7 @@
                                             <li>
                                                 <div class="comment">
                                                     <div class="comment-author">
-                                                        <img class="avatar" alt="" src="assets/img/user.jpg">
+                                                        <img class="avatar" alt="" src="admin_assets/img/user.jpg">
                                                     </div>
                                                     <div class="comment-block">
                                                         <span class="comment-by">
@@ -95,7 +97,7 @@
                                             <li>
                                                 <div class="comment">
                                                     <div class="comment-author">
-                                                        <img class="avatar" alt="" src="assets/img/user.jpg">
+                                                        <img class="avatar" alt="" src="admin_assets/img/user.jpg">
                                                     </div>
                                                     <div class="comment-block">
                                                         <span class="comment-by">
@@ -114,7 +116,7 @@
                                     <li>
                                         <div class="comment">
                                             <div class="comment-author">
-                                                <img class="avatar" alt="" src="assets/img/user.jpg">
+                                                <img class="avatar" alt="" src="admin_assets/img/user.jpg">
                                             </div>
                                             <div class="comment-block">
                                                 <span class="comment-by">
@@ -131,7 +133,7 @@
                                     <li>
                                         <div class="comment">
                                             <div class="comment-author">
-                                                <img class="avatar" alt="" src="assets/img/user.jpg">
+                                                <img class="avatar" alt="" src="admin_assets/img/user.jpg">
                                             </div>
                                             <div class="comment-block">
                                                 <span class="comment-by">
@@ -172,6 +174,7 @@
                                 </form>
                             </div>
                         </div>
+                      
                     </div>
                     <aside class="col-md-4">
                         <div class="widget search-widget">
@@ -187,71 +190,33 @@
                         </div>
                         <div class="widget post-widget">
                             <h5>Latest Posts</h5>
+                          
                             <ul class="latest-posts">
+                            @foreach($popularblog as $popular)
                                 <li>
                                     <div class="post-thumb">
-                                        <a href="blog-details.html">
-                                            <img class="img-fluid" src="assets/img/blog/blog-thumb-01.jpg" alt="">
+                                        <a href="/blog_show/{{$blog->id}}">
+                                            <img class="img-fluid" src="admin_assets/img/blog/blog-thumb-01.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="post-info">
                                         <h4>
-											<a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
+                                            <a href="/blog_show/{{"$popular->id"}}">{{$popular->title}}</a>
+                                           
 										</h4>
-                                        <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
+                                        <p><i aria-hidden="true" class="fa fa-calendar"></i> {{$popular->created_at->format('M, d, Y')}}</p>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html">
-                                            <img class="img-fluid" src="assets/img/blog/blog-thumb-02.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="post-info">
-                                        <h4>
-											<a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-										</h4>
-                                        <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html">
-                                            <img class="img-fluid" src="assets/img/blog/blog-thumb-03.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="post-info">
-                                        <h4>
-											<a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-										</h4>
-                                        <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html">
-                                            <img class="img-fluid" src="assets/img/blog/blog-thumb-04.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="post-info">
-                                        <h4>
-											<a href="blog-details.html">Lorem ipsum dolor sit amet consectetur</a>
-										</h4>
-                                        <p><i aria-hidden="true" class="fa fa-calendar"></i> December 6, 2017</p>
-                                    </div>
-                                </li>
+                            @endforeach
                             </ul>
                         </div>
                         <div class="widget category-widget">
                             <h5>Blog Categories</h5>
+                            @foreach($blogcat as $cat)
                             <ul class="categories">
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                                <li><a href="#."><i class="fa fa-long-arrow-right"></i> Lorem ipsum dolor</a></li>
-                            </ul>
+                                <li><a href="#."><i class="fa fa-long-arrow-right"></i>{{$cat->category_name}}</a></li>
+                                </ul>
+                            @endforeach
                         </div>
                         <div class="widget tags-widget">
                             <h5>Tags</h5>
@@ -271,4 +236,4 @@
                     </aside>
                 </div>
             </div>
-           
+@endsection
