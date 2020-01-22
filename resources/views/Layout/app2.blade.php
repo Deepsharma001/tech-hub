@@ -6,18 +6,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('admin_assets/img/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('public/admin_assets/img/favicon.ico') }}">
     <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
     <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin_assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/admin_assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/admin_assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/admin_assets/css/style.css') }}">
     @stack('css')
     <!--[if lt IE 9]>
-		<script src="{{asset('admin_assets/js/html5shiv.min.js') }}"></script>
-		<script src="{{asset('admin_assets/js/respond.min.js') }}"></script>
+		<script src="{{asset('public/admin_assets/js/html5shiv.min.js') }}"></script>
+		<script src="{{asset('public/admin_assets/js/respond.min.js') }}"></script>
 	<![endif]-->
 </head>
 
@@ -26,7 +26,7 @@
         <div class="header">
             <div class="header-left">
                 <a href="index-2.html" class="logo">
-                    <img src="{{asset('admin_assets/img/logo.png') }}" width="35" height="35" alt=""> <span>Preclinic</span>
+                    <img src="{{asset('public/admin_assets/img/logo.png') }}" width="35" height="35" alt=""> <span>Preclinic</span>
                 </a>
             </div>
             <a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -44,7 +44,7 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-												<img alt="John Doe" src="admin_assets/img/user.jpg" class="img-fluid">
+												<img alt="John Doe" src="public/admin_assets/img/user.jpg" class="img-fluid">
 											</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -67,7 +67,7 @@
                 <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                         <span class="user-img">
-							<img class="rounded-circle" src="{{asset('admin_assets/img/user.jpg') }}" width="24" alt="Admin">
+							<img class="rounded-circle" src="{{asset('public/admin_assets/img/user.jpg') }}" width="24" alt="Admin">
 							<span class="status online"></span>
                         </span>
                         <span>Admin</span>
@@ -311,15 +311,15 @@
         </div>
     </div>
     <div class="sidebar-overlay" data-reff=""></div>
-    <script src="{{asset('admin_assets/js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{asset('admin_assets/js/popper.min.js') }}"></script>
-    <script src="{{asset('admin_assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{asset('admin_assets/js/jquery.slimscroll.js') }}"></script>
-    <script src="{{asset('admin_assets/js/Chart.bundle.js') }}"></script>
-    <script src="{{asset('admin_assets/js/chart.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/popper.min.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/jquery.slimscroll.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/Chart.bundle.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/chart.js') }}"></script>
     <script src="assets/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/dataTables.bootstrap4.min.js"></script>
-    <script src="{{asset('admin_assets/js/app.js') }}"></script>
+    <script src="{{asset('public/admin_assets/js/app.js') }}"></script>
     <script>
             $(function () {
                 $('#datetimepicker3').datetimepicker({
