@@ -18,7 +18,7 @@
         @foreach($blogs as $blog)
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="/blog_single/{{"$blog->id"}}" class="block-20 d-flex align-items-end" style="background-image: url('{{ URL::asset($blog->image) }}');">
+              <a href="/blog_single/{{"$blog->id"}}" class="block-20 d-flex align-items-end" style="background-image: url('{{ URL::asset('public/images/'.$blog->image) }}');">
 								<div class="meta-date text-center p-2">
                   <span class="day">{{$blog->created_at->format('d')}}</span>
                   <span class="mos">{{$blog->created_at->format('M')}}</span>
@@ -40,21 +40,30 @@
           </div>
           @endforeach
         </div>
+     
+        <div class="row mt-5 justify-content-center ">
+        @if($blog->count() < 10) 
         <div class="row mt-5">
           <div class="col text-center">
             <div class="block-27">
               <ul>
-                <li><a href="#">&lt;</a></li>
+              <li><a href="#">&lt;</a></li>
                 <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
+                <!-- <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+                <li><a href="#">5</a></li> -->
                 <li><a href="#">&gt;</a></li>
               </ul>
             </div>
           </div>
         </div>
+        
+        @else
+        {{ $blogs->links() }}
+        @endif
+        </div>
+        
 			</div>
 		</section>
 @endsection

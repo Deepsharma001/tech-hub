@@ -8,7 +8,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <form action= "{{'/blog_add'}}" method="post">
+                        <form action= "{{'/blog_add'}}" method="post" enctype="multipart/form-data">
                         @csrf
                             <div class="form-group">
                                 <label>Blog Name</label>
@@ -17,10 +17,10 @@
                             <div class="form-group">
                                 <label>Blog Images</label>
                                 <div>
-                                    <input class="form-control" name="image" type="file">
+                                    <input class="form-control" name="image" type="file" id="file">
                                     <small class="form-text text-muted">Max. file size: 50 MB. Allowed images: jpg, gif, png. Maximum 10 images only.</small>
                                 </div>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-3 col-sm-3 col-4 col-lg-3 col-xl-2">
                                         <div class="product-thumbnail">
 											<img src="admin_assets/img/blog/blog-thumb-01.jpg" class="img-thumbnail img-fluid" alt="">
@@ -57,7 +57,7 @@
                                             <span class="product-remove" title="remove"><i class="fa fa-close"></i></span>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
@@ -112,7 +112,7 @@
 								</div>
                             </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn">Publish Blog</button>
+                                <button class="btn btn-success submit-btn">Publish Blog</button>
                             </div>
                         </form>
                     </div>

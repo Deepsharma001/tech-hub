@@ -8,7 +8,7 @@
           <div class="col-md-7 ftco-animate">
           	<span class="subheading">Welcome to StudyBABA</span>
             <h1 class="mb-4">We Are Ready to Grow Your Business</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Call Us Now!!</a></p>
+            <p><a href="tel://8949764990" class="btn btn-primary px-4 py-3 mt-3">Call Us Now!!</a></p>
           </div>
         </div>
         </div>
@@ -21,7 +21,7 @@
           <div class="col-md-7 ftco-animate">
           	<span class="subheading">Think Now, Get Success</span>
             <h1 class="mb-4">We are For You to Made Your Profite</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Let's Connect</a></p>
+            <p><a href="tel://8949764990" class="btn btn-primary px-4 py-3 mt-3">Let's Connect</a></p>
           </div>
         </div>
         </div>
@@ -33,7 +33,7 @@
           <div class="col-md-7 ftco-animate">
           	<span class="subheading">Let's Work Together</span>
             <h1 class="mb-4">We Think We Can Do It For You</h1>
-            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Let's Chat</a></p>
+            <p><a href="mailto:info@studybaba.in" class="btn btn-primary px-4 py-3 mt-3">Let's Chat</a></p>
           </div>
         </div>
         </div>

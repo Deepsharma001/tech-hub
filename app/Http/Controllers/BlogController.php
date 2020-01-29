@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Blog;
+use pagination;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -13,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::orderBy('id')->get();
+        $blogs = Blog::orderBy('id')->paginate(10);
         return view('Dashboard.blog',compact('blogs'));
     }
 

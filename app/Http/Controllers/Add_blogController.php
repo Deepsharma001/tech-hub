@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Blog;
 use App\Category;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Input;
 class Add_blogController extends Controller
 {
     public function __construct()
@@ -50,10 +50,15 @@ php artisan view:clear
     public function store(Request $request)
     { 
         
+        if(Input::hasFile('image')){
+            $file = Input::file('image');
+            $file->move('blog', $file->getClientOriginalName());
+        }
         $requestData['title']              = $request->title;
         $requestData['category']               = $request->category;
-        $requestData['image']                = $request->image;
+        $requestData['image']                =$file->getClientOriginalName();
         $requestData['description']               = $request->description;
+        // dd($requestData);
         
         Blog::create($requestData);
         return redirect()->back();
