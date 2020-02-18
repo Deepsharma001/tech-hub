@@ -18,7 +18,7 @@
         @foreach($blogs as $blog)
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="/blog_single/{{"$blog->id"}}" class="block-20 d-flex align-items-end" style="background-image: {{ URL::asset($blog->image) }}">
+              <a href="/blog_single/{{"$blog->id"}}" class="block-20 d-flex align-items-end" style="background-image: url('{{ URL::asset($blog->image) }}')">
 								<div class="meta-date text-center p-2">
                   <span class="day">{{$blog->created_at->format('d')}}</span>
                   <span class="mos">{{$blog->created_at->format('M')}}</span>
