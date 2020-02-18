@@ -24,7 +24,7 @@ Route::get('/blog_edit/{id}','Add_blogController@edit');
 Route::post('/blog_edit/{id}','Add_blogController@update');
 Route::get('/all_blog','Add_blogController@all');
 
-
+ 
 
 
 
@@ -36,9 +36,13 @@ Route::get('/contact','ContactController@index');
 Route::get('/project','ProjectController@index');
 Route::get('contect/create','ContactController@save');
 Route::post('contact/create','ContactController@create');
+// Route::get('comment/create','Comment@save');
+// Route::post('comment/create','CommentController@create');
 
-Route::get('/blog_single/{id}','Blog_singleController@index');
-Route::get('/blog_single/{id}/create','CommentController@create');
+Route::get('/blog_single/{id}','Blog_SingleController@index');
+Route::get('/blog_single/{id}/comment','CommentController@create');
+Route::post('/blog_single/{id}/comment','CommentController@create');
+
 
 
 

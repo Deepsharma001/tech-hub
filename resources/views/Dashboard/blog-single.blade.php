@@ -60,7 +60,7 @@
                   </div>
                 </li>
 
-                <li class="comment">
+                <!-- <li class="comment">
                   <div class="vcard bio">
                     <img src="{{ URL::asset($blog->image) }}" alt="Image placeholder">
                   </div>
@@ -83,39 +83,11 @@
                         <p><a href="#" class="reply">Reply</a></p>
                       </div>
 
-
-                      <ul class="children">
-                        <li class="comment">
-                          <div class="vcard bio">
-                            <img src="public/images/person_1.jpg" alt="Image placeholder">
-                          </div>
-                          <div class="comment-body">
-                            <h3>John Doe</h3>
-                            <div class="meta mb-2">June 27, 2019 at 2:21pm</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                            <p><a href="#" class="reply">Reply</a></p>
-                          </div>
-
-                            <ul class="children">
-                              <li class="comment">
-                                <div class="vcard bio">
-                                  <img src="public/images/person_1.jpg" alt="Image placeholder">
-                                </div>
-                                <div class="comment-body">
-                                  <h3>John Doe</h3>
-                                  <div class="meta mb-2">June 27, 2019 at 2:21pm</div>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
-                                  <p><a href="#" class="reply">Reply</a></p>
-                                </div>
-                              </li>
-                            </ul>
-                        </li>
-                      </ul>
                     </li>
                   </ul>
-                </li>
+                </li> -->
 
-                <li class="comment">
+                <!-- <li class="comment">
                   <div class="vcard bio">
                     <img src="public/images/person_1.jpg" alt="Image placeholder">
                   </div>
@@ -125,14 +97,16 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
                     <p><a href="#" class="reply">Reply</a></p>
                   </div>
-                </li>
+                </li> -->
               </ul>
               <!-- END comment-list -->
               
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5 h4 font-weight-bold">Leave a comment</h3>
-                <form action="#" class="p-5 bg-light" method="post">
+                <form action="/blog_single/{{"$blog->id"}}/comment" class="p-5 bg-light" method="post">
                   <div class="form-group">
+                    @csrf
+                  <input type="hidden" value="{{$blog->id}}" name="blog_id">
                     <label for="name" >Name *</label>
                     <input type="text" name="name" class="form-control" id="name">
                   </div>
@@ -142,7 +116,7 @@
                   </div>
                   <div class="form-group">
                     <label for="website">Regards</label>
-                    <input type="url" name="regards" class="form-control" id="website">
+                    <input type="text" name="regards" class="form-control" id="website">
                   </div>
 
                   <div class="form-group">

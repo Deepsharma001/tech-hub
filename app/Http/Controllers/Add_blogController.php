@@ -26,7 +26,7 @@ php artisan view:clear
     {
 
         $blogs = Blog::latest()->take(6)->get();
-        return view('Admin.blog',compact('blogs'));
+        return view('admin.blog',compact('blogs'));
     }
 
     /**
@@ -84,7 +84,7 @@ php artisan view:clear
     {
         // dd("dd");
         $blogs = Blog::orderBy('id')->get();
-        return view('Admin.all-blog',compact('blogs'));
+        return view('admin.all-blog',compact('blogs'));
 
     }
     /**

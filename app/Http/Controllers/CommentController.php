@@ -24,11 +24,13 @@ class CommentController extends Controller
      */
     public function create(Request $request)
     {
-        $requestData['name']              = $request->name;
+
+        $requestData['blog_id']              = $request->blog_id;
+        $requestData['name']                 = $request->name;
         $requestData['email']                = $request->email;
         $requestData['regards']               = $request->regards;
-        $requestData['message']               = $request->message;
-       
+        $requestData['message']               = $request->textarea;
+        // dd($requestData);
         Comment::create($requestData);
         return redirect()->back();
     }
